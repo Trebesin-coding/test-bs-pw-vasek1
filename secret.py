@@ -16,9 +16,9 @@ def main():
          page.fill('input[id="pass"]',password)
          page.click('button[class="login-btn"]')
          
-         jarmil = page.locator('div[class="psst"]').text_content()
+         ticháček = page.locator('div[class="psst"]').text_content()
 
-         print(jarmil)
+         print(ticháček)
 
          input("vypni")
 

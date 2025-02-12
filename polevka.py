@@ -7,7 +7,8 @@ def main():
      url ="https://js-trebesin.github.io/bsoup-exam/"
      response = requests.get(url)
 
-     soup = BeautifulSoup(response.content, "html.parser")
+     soup = BeautifulSoup(response.content, "html.parser")# vytvoření proměnnou, která zbírá informace z webu v html stylu
+
      list =  []
      suroviny = soup.find_all(class_ ="stuff")
      for p in suroviny:
